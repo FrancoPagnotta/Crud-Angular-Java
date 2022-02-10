@@ -1,1 +1,27 @@
-<p>clients works!</p>
+<div class="card bg-light mb-3" style="max-width: 18rem;">
+	<div class="card-header">Clients</div>
+	<div class="card-body">
+	  <h5 class="card-title">Clients list</h5>
+	  <table class="table">
+		<thead>
+		  <tr>
+			<th scope="col">Id</th>
+			<th scope="col">Name</th>
+			<th scope="col">Surename</th>
+			<th scope="col">Email</th>
+			<th scope="col">Date</th>
+		  </tr>
+		</thead>
+		<tbody>
+		  <tr *ngFor="let client of clients">
+			<th scope="row">1</th>
+			<td> {{ client.id }} </td>
+			<td> {{ client.name }} </td>
+			<td> {{ client.surename }} </td>
+			<td> {{ client.email }} </td>
+			<td> {{ client.date }} </td>
+		  </tr>
+		</tbody>
+	  </table>
+	</div>
+</div>
