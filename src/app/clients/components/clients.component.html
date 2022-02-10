@@ -1,8 +1,7 @@
-<div class="card bg-light mb-3" style="max-width: 18rem;">
-	<div class="card-header">Clients</div>
+<div class="card bg-light mb-3">
 	<div class="card-body">
 	  <h5 class="card-title">Clients list</h5>
-	  <table class="table">
+	  <table class="table table-bordered table-striped">
 		<thead>
 		  <tr>
 			<th scope="col">Id</th>
@@ -14,7 +13,6 @@
 		</thead>
 		<tbody>
 		  <tr *ngFor="let client of clients">
-			<th scope="row">1</th>
 			<td> {{ client.id }} </td>
 			<td> {{ client.name }} </td>
 			<td> {{ client.surename }} </td>
