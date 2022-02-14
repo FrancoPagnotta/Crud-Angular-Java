@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Client } from '../client';
+import { ClientsService } from '../services/clients.service';
 
 
 @Component({
@@ -8,33 +9,12 @@ import { Client } from '../client';
   styleUrls: ['./clients.component.css']
 })
 export class ClientsComponent implements OnInit {
-  clients: Client[] = [
-    {
-      id: 1,
-      name: 'Kari',
-      surename: 'Sorjonen',
-      date: '10/02/2022',
-      email: 'ksorjonen@gmail.com'
-    },
-    {
-      id: 2,
-      name: 'Niko',
-      surename: 'Uusitalo',
-      date: 'nuursitalo@gmail.com',
-      email: '11/02/2022'
-    },
-    {
-      id: 3,
-      name: 'Lena',
-      surename: 'Jaakkola',
-      date: '12/02/2022',
-      email: 'ljaakola@gmail.com'
-    },
-  ]
+  clients: Client[] = []
 
-  constructor() { }
+  constructor(private clientsService: ClientsService) { }
 
   ngOnInit(): void {
+    this.clients = this.clientsService.getClients()
   }
 
 }
