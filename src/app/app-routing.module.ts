@@ -5,16 +5,11 @@ import { ClientsComponent } from './clients/components/clients.component';
 
 const routes: Routes = [
   { path: 'Clients', component: ClientsComponent },
-  { path: '**', pathMatch: 'full', redirectTo: 'Clients' }
-]
-
-
+  { path: '**', pathMatch: 'full', redirectTo: 'Clients' },
+];
 
 @NgModule({
   declarations: [],
-  imports: [
-    CommonModule,
-    RouterModule.forRoot(routes)
-  ]
+  imports: [CommonModule, RouterModule.forRoot(routes)],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

@@ -4,13 +4,12 @@ import { Client } from '../client';
 import { CLIENTS } from '../clients.json';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ClientsService {
-
-  constructor() { }
+  constructor() {}
 
   getClients(): Observable<Client[]> {
-    return of(CLIENTS)
+    return of(CLIENTS);
   }
 }

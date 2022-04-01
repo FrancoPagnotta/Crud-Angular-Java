@@ -1,25 +1,25 @@
 <div class="card bg-light mb-3">
-	<div class="card-body">
-	  <h5 class="card-title">Clients list</h5>
-	  <table class="table table-bordered table-striped table-hover">
-		<thead>
-		  <tr>
-			<th scope="col">Id</th>
-			<th scope="col">Name</th>
-			<th scope="col">Surename</th>
-			<th scope="col">Email</th>
-			<th scope="col">Date</th>
-		  </tr>
-		</thead>
-		<tbody>
-		  <tr *ngFor="let client of clients">
-			<td> {{ client.id }} </td>
-			<td> {{ client.name }} </td>
-			<td> {{ client.surename }} </td>
-			<td> {{ client.email }} </td>
-			<td> {{ client.date }} </td>
-		  </tr>
-		</tbody>
-	  </table>
-	</div>
+  <div class="card-body">
+    <h5 class="card-title">Clients list</h5>
+    <table class="table table-bordered table-striped table-hover">
+      <thead>
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Name</th>
+          <th scope="col">Surename</th>
+          <th scope="col">Email</th>
+          <th scope="col">Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let client of clients">
+          <td>{{ client.id }}</td>
+          <td>{{ client.name }}</td>
+          <td>{{ client.surename }}</td>
+          <td>{{ client.email }}</td>
+          <td>{{ client.date }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
