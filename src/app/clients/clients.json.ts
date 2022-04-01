@@ -12,8 +12,8 @@ export const CLIENTS: Client[] = [
     id: 2,
     name: 'Niko',
     surename: 'Uusitalo',
-    date: 'nuursitalo@gmail.com',
-    email: '11/02/2022',
+    date: '11/02/2022',
+    email: 'nikko@gmail.com',
   },
   {
     id: 3,
